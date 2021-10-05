@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: #343A40;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  height: 60px;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+@use "../custom/colors" as color;
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: color.$darkGrey;
+    ul {
+        display: flex;
+        margin: 0;
+        height: 60px;
+        align-items: center;
+        li {
+            list-style-type: none;
+        }
+    }
+}
