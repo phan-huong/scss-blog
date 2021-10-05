@@ -1,1 +1,1 @@
-# scss-theme
+# scss-blog
