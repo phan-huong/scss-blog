@@ -1,16 +1,37 @@
 @use "../custom/colors" as color;
+@use "../custom/variables" as v;
 
-nav {
+@mixin nav_align ($display, $alignItems) {
+    display: $display;
+    align-items: $alignItems;
+}
+
+.menu_bar {
     position: sticky;
     top: 0px;
     background-color: color.$darkGrey;
+    @include nav_align(flex, center);
+}
+.menu_title {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: color.$white;
+}
+.nav_bar {
     ul {
-        display: flex;
         margin: 0;
         height: 60px;
-        align-items: center;
+        @include nav_align(flex, center);
         li {
             list-style-type: none;
+            margin-left: 1rem;
+            a {
+                color: color.$lightGrey;
+                text-decoration: none;
+                &:hover {
+                    color: color.$white;
+                }
+            }                 
         }
     }
 }

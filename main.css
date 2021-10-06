@@ -1,21 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
 body {
   background-color: lightblue;
   margin: 0;
+  font-family: "Mitr", sans-serif;
+  font-size: 1rem;
 }
 
-nav {
+.menu_bar {
   position: sticky;
   top: 0px;
   background-color: #343A40;
-}
-nav ul {
   display: flex;
-  margin: 0;
-  height: 60px;
   align-items: center;
 }
-nav ul li {
+
+.menu_title {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.nav_bar ul {
+  margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.nav_bar ul li {
   list-style-type: none;
+  margin-left: 1rem;
+}
+.nav_bar ul li a {
+  color: #CFCFCF;
+  text-decoration: none;
+}
+.nav_bar ul li a:hover {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
